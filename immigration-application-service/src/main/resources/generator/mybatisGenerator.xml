@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="C:\Users\chencheng10\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.35\b6ac941b7288376a7e8bc6490264bbd4427fb94e/mysql-connector-java-5.1.35.jar" />
+
+    <context id="Mysql2Tables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://hx-soc_temai-d_soc_temai-master.db.tuniu-sst.org:3306/d_soc_temai?useUnicode=true&amp;characterEncoding=UTF-8"
+                        userId="d_soc_temai_rw"
+                        password="tuniu520">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.tuniu.soc.temai.dao.entity" targetProject="D:\workbentch\temai\business\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="resources.mapper"  targetProject="D:\workbentch\temai\business\src\main">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.tuniu.soc.temai.dao.mapper" targetProject="D:\workbentch\temai\business\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="t_prd_update_record">
+        </table>
+
+    </context>
+</generatorConfiguration>

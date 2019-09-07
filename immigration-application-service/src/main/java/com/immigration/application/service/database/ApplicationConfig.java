@@ -1,4 +1,4 @@
-package com.immigration.application.database;
+package com.immigration.application.service.database;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import lombok.Data;

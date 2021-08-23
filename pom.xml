@@ -20,7 +20,7 @@
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <java.version>1.8</java.version>
         <hutool.version>4.5.0</hutool.version>
-        <jsoup.version>1.11.3</jsoup.version>
+        <jsoup.version>1.14.2</jsoup.version>
         <poi.version>3.17</poi.version>
         <weixin.version>3.5.0</weixin.version>
         <swagger2.version>2.9.2</swagger2.version>
